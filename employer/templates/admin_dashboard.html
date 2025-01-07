@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+
+    <!-- Display Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class="flash-messages">
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <!-- Authenticate Users Form -->
+    <form method="POST">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>ID</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td>
+                        <input type="checkbox" name="user_ids" value="{{ user.id }}">
+                    </td>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.email }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <br>
+        <button type="submit">Authenticate Selected Users</button>
+    </form>
+
+    <hr>
+    
+    <!-- Delete Users Form -->
+    <form method="POST">
+        <label for="delete">Delete Users (Comma-separated IDs):</label>
+        <input type="text" id="delete" name="delete" pattern="(\d+,)*\d+" placeholder="e.g. 1,2,3" required>
+        <button type="submit">Delete Selected Users</button>
+    </form>
+
+    <br>
+    <a href="{{ url_for('admin_logout') }}">Logout</a>
+    <a href="{{ url_for('listings') }}">Click here to download listings</a>
+</body>
+</html>

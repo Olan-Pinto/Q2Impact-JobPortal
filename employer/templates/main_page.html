@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Dashboard</h1>
+
+    <!-- Download CSV -->
+    <a href="../static/job_upload_template.xlsx" download>
+        <button>Download Sample Excel Template</button>
+    </a>
+
+    <hr>
+
+    <!-- Upload CSV -->
+    <form method="POST" enctype="multipart/form-data">
+        <label for="file">Upload XLSX File:</label>
+        <input type="file" id="file" name="file" accept=".xlsx" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <!-- Success/Error Message -->
+    {% if success %}
+        <p style="color: green;">{{ success }}</p>
+    {% endif %}
+</body>
+</html>
