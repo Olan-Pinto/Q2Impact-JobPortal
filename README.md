@@ -1,5 +1,6 @@
 ## Home Page
-* Dynamic Color Background
+* Dynamic Color Background, will change color when refreshing it.
+* Jordan Color
 ### English Page
 <img width="1110" alt="截圖 2025-01-17 凌晨12 08 35" src="https://github.com/user-attachments/assets/f9d800c1-3378-4d33-8bed-39bc2234365b" />
 ### Arabic Page
