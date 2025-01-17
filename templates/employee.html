@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Employee Login / Signup</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="buttons-container-home">
+        <button id="home-btn" class="home-button" onclick="window.location.href='./index.html'">Home</button>
+    </div>
+
+    <div class="language-switcher">
+        <span id="lang-en">English</span>
+        <label class="switch">
+            <input type="checkbox" id="languageToggle">
+            <span class="slider"></span>
+        </label>
+        <span id="lang-ar">العربية</span>
+    </div>
+    
+    <div class="container">
+        <h2 id="page-heading-employee">Employee</h2>
+        
+        <div class="auth-toggle">
+            <button id="login-btn" class="auth-btn active" data-key="login">Login</button>
+            <button id="signup-btn" class="auth-btn" data-key="signup">Sign Up</button>
+        </div>
+
+        <div id="login-form" class="auth-form">
+            <form action="/employee/login" method="POST">
+                <div class="form-group">
+                    <label for="login-email" id="label-login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="login-password" id="label-login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required placeholder="Enter your password">
+                </div>
+                <button type="submit" class="submit-btn" id="submit-login-btn">Login</button>
+            </form>
+        </div>
+
+        <div id="signup-form" class="auth-form hidden">
+            <form action="/employee/signup" method="POST">
+                <div class="form-group">
+                    <label for="signup-name" id="label-signup-name-full">Full Name:</label>
+                    <input type="text" id="signup-name" name="full_name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="signup-email" id="label-signup-email">Email:</label>
+                    <input type="email" id="signup-email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="signup-password" id="label-signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="password" required placeholder="Create a password">
+                </div>
+                <button type="submit" class="submit-btn" id="submit-signup-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

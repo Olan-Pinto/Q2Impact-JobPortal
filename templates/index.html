@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+  <div class="background">
+    <div class="language-switcher">
+      <span id="lang-en">English</span>
+      <label class="switch">
+        <input type="checkbox" id="languageToggle">
+        <span class="slider"></span>
+      </label>
+      <span id="lang-ar">العربية</span>
+    </div>
+
+    <div class="center-content">
+      <h1 id="welcome-text">Welcome to Job Finder</h1>
+      <div class="buttons">
+        <button id="employer-btn" onclick="window.location.href='./employer.html'">Employer</button>
+        <button id="employee-btn" onclick="window.location.href='./employee.html'">Employee</button>
+        <button id="organization-btn" onclick="window.location.href='./organization.html'">Youth Organization</button>
+      </div>
+    </div>
+  </div>
+  <script src="../scripts.js"></script>
+</body>
+</html>

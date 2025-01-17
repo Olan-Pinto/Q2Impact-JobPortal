@@ -1,0 +1,19 @@
+{
+    "welcome-text": "Welcome to Job Finder",
+    "employer-btn": "Employer",
+    "employee-btn": "Employee",
+    "organization-btn": "Youth Organization",
+    "page-heading-employer": "Employer",
+    "page-heading-employee": "Employee",
+    "home-btn":"Home",
+    "login-btn": "Login",
+    "signup-btn": "Sign Up",
+    "label-login-email": "Email:",
+    "label-login-password": "Password:",
+    "submit-login-btn": "Login",
+    "label-signup-name": "Company Name:",
+    "label-signup-name-full": "Full Name:",
+    "label-signup-email": "Email:",
+    "label-signup-password": "Password:",
+    "submit-signup-btn": "Sign Up"
+  }

@@ -1,0 +1,20 @@
+{
+    "welcome-text": "مرحبًا بك في موقع البحث عن الوظائف",
+    "employer-btn": "صاحب العمل",
+    "employee-btn": "الموظف",
+    "organization-btn": "منظمة الشباب",
+    "page-heading-employer": "صاحب العمل",
+    "page-heading-employee": "الموظف",
+    "home-btn":"الصفحة الرئيسية",
+    "login-btn": "تسجيل الدخول",
+    "signup-btn": "التسجيل",
+    "label-login-email": "البريد الإلكتروني:",
+    "label-login-password": "كلمة المرور:",
+    "submit-login-btn": "تسجيل الدخول",
+    "label-signup-name": "اسم الشركة:",
+    "label-signup-name-full": "الاسم الكامل:",
+    "label-signup-email": "البريد الإلكتروني:",
+    "label-signup-password": "كلمة المرور:",
+    "submit-signup-btn": "إنشاء حساب"
+  }
+  
